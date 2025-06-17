@@ -5,7 +5,9 @@
 */
 
 function isAnagram(str1, str2) {
-
+  const finalAnswer = (str) => str.toLowerCase().split("").sort().join();
+  // console.log(finalAnswer(str1), finalAnswer(str2));
+  return finalAnswer(str1) == finalAnswer(str2);
 }
 
 module.exports = isAnagram;
